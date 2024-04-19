@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    border-radius: 3px;
   }
 
   html {
@@ -10,13 +11,16 @@
   }
 
   body {
-    padding: 0 0 1em;
+    padding: 0;
+    border: 0;
   }
 
   header {
     background-color: #333;
+    width: 100vw;
+    margin: 0;
+    border: 0;
     color: #fff;
-    border: 5px solid #000;
   }
 
   header ul {
@@ -34,10 +38,12 @@
   }
 
   header .title {
-    font-size: 150%;
-    font-style: italic;
-    font-weight: bold;
-    padding: 1em;
+    background-color: #b3b3b3;
+    background-image: url(../images/banner-logo-responsive.jpg);
+    width: 43px;
+    height: 43px;
+    background-position: -730px -257px;
+    text-indent: -99999px;
   }
 
   main {
@@ -51,8 +57,9 @@
   }
 
   .cards li {
-    border: 5px solid #000;
     margin-bottom: 1em;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
   }
 
   .cards h2 {
@@ -68,7 +75,48 @@
 
   .sidebar {
     background-color: #333;
-    border: 5px solid #000;
     padding: 0.5em 1em;
     color: #fff;
+  }
+
+  @media screen and (min-width:431px){
+    header .title {
+      width: 55px;
+      height: 55px;
+      background-position: -725px -193px;
+
+    }
+    
+
+  }
+  @media screen and (min-width:1025px){
+    header .title {
+      width: 66px;
+      height: 66px;
+      background-position: -720px -120px;
+    }
+    .contenido1 {
+      display: flex;
+      justify-content: center;
+
+    }
+    .contenido2 {
+      display: flex;
+    }
+    .cards li{
+      margin-right: 20px;
+    }
+      
+    }
+
+  @media screen and (min-width:1201px){
+    header .title {
+      width: 105px;
+      height: 105px;
+      background-position: -700px 0px;
+    }
+    .contenido1{
+      justify-content: space-around;
+      
+    }
   }
