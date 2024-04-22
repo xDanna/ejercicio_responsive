@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     border-radius: 3px;
+    
   }
 
   html {
@@ -14,7 +15,6 @@
     padding: 0;
     border: 0;
   }
-
   header {
     background-color: #333;
     width: 100vw;
@@ -22,7 +22,7 @@
     border: 0;
     color: #fff;
   }
-
+    
   header ul {
     list-style: none;
     margin: 0;
@@ -38,12 +38,13 @@
   }
 
   header .title {
-    background-color: #b3b3b3;
+    background-color: #b4b4b3;
     background-image: url(../images/banner-logo-responsive.jpg);
     width: 43px;
     height: 43px;
     background-position: -730px -257px;
     text-indent: -99999px;
+    
   }
 
   main {
@@ -54,12 +55,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    
   }
 
   .cards li {
     margin-bottom: 1em;
     background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
   }
 
   .cards h2 {
@@ -86,10 +88,15 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 
       background-position: -725px -193px;
 
     }
-    
-
   }
   @media screen and (min-width:1025px){
+    .contenedor{
+      display: flex;
+    }
+    header{
+      width: 175px;
+      height: 100%;
+    }
     header .title {
       width: 66px;
       height: 66px;
